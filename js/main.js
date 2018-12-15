@@ -4,7 +4,7 @@
 $(function () {
     'use strict';
 
-    $("#go").click(function () {
+    $("#go").on('click',function () {
         var hr = $(this).attr("href");
         var anh = $(hr).offset().top;
         $("html,body").stop().animate({scrollTop: anh}, 2000);
